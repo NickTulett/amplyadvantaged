@@ -67,10 +67,10 @@ Wrongly typed as a password field, so will be invisible to the user
 
 ### Source info URL  
 Pedantically, the success message should be "Valid URL format." - validity of URLs is not a solvable problem.  
-This field will need cleansing to prevent javascript URLs being used to seed unexpected behaviour when the data is presented.  
+This field will need sanitising to prevent javascript URLs being used to seed unexpected behaviour when the data is presented.  
 
 ### Risk level
-Each option elements is missing a value.  
+Each option element is missing a value.  
 *The user should be forced to enter a value here - defaulting to "Low" risks accidental form completion (e.g. by tabbing or hitting space or enter, unintended swipe/tap on mobile, etc.) with the wrong risk level.*
 
 ### noscript
