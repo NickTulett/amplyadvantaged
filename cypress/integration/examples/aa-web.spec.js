@@ -84,6 +84,7 @@ describe("AmplyAdvantaged Web UI tests", () => {
     })
         
     context("Should validate missing entries", () => {
+
         const PARAM_NAMES = Object.keys(VALID_ENTRY);
         PARAM_NAMES.forEach((missingParamName) => {
             // clone the valid entry object
@@ -104,6 +105,7 @@ describe("AmplyAdvantaged Web UI tests", () => {
                 }
             })
         })
+        
     })
 
     context("Checks for input sanitation", () => {

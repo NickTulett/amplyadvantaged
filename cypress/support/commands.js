@@ -1,5 +1,5 @@
     /**
- * A helper function to take in an object in the above format
+ * A helper function to take in an object in JSON format
  * and feed it into the form, then check the value persists
  * Cypress handles any error messages automatically
  * @param {*} params an input object in the above format
@@ -23,6 +23,9 @@ Cypress.Commands.add("incompleteForm", (params, excludedParam) => {
     cy.completeForm(params)
 })
 
+/** A helper function to check that URL validation messages
+ * appear when required and have the correct text
+ */
 Cypress.Commands.add("checkURLvalidation", (badParamName) => {
     cy.get('[class*="valid-feedback"]')
         .should(($feedbackValidation) => {
